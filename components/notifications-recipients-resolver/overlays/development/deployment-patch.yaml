@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: notifications-recipients-resolver
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-recipients-resolver@sha256:19047df319b92104b2733127f518955d1dab4787e3dd677c7e0cf8e52b8b001e
+        name: my-java-quarkus
+        resources: {}
+status: {}

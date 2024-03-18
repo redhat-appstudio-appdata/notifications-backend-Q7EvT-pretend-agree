@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: notifications-connector-webhook
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: notifications-connector-webhook
+    app.kubernetes.io/part-of: notifications-backend
+  name: notifications-connector-webhook
+spec:
+  ports:
+  - name: http-8081
+    port: 8081
+    protocol: TCP
+    targetPort: 8081
+  - name: "9006"
+    port: 9006
+    targetPort: 9006
+  selector:
+    app: java-quarkus-app
+    app.kubernetes.io/instance: notifications-connector-webhook
+status:
+  loadBalancer: {}

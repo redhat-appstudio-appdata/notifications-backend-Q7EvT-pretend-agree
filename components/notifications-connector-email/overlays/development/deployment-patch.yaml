@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: notifications-connector-email
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-connector-email@sha256:2f71fe1675b1d90117e9f82b7f91838b0914f7a13c52a2e9bcf2ffc8034c650a
+        name: my-java-quarkus
+        resources: {}
+status: {}

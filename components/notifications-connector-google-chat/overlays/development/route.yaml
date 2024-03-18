@@ -1,0 +1,23 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: notifications-connector-google-chat
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: notifications-connector-google-chat
+    app.kubernetes.io/part-of: notifications-backend
+  name: notifications-connector-gryyh
+spec:
+  path: /
+  port:
+    targetPort: 9001
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: notifications-connector-google-chat
+    weight: null
+status: {}

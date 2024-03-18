@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: notifications-connector-google-chat
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-connector-google-chat@sha256:37e4f83b2b6f40c01f1743b69f4fc84efa8132ff30c4cc32e8781e7d6311a12b
+        name: my-java-quarkus
+        resources: {}
+status: {}

@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: notifications-connector-splunk
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-connector-splunk@sha256:43e22ceb00573d070aecbf1963342f3f3dad87a005cfabe3c296883df4d73512
         name: my-java-quarkus
         ports:
         - containerPort: 8081

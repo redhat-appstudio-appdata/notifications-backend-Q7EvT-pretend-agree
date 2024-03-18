@@ -1,0 +1,23 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: notifications-connector-splunk
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: notifications-connector-splunk
+    app.kubernetes.io/part-of: notifications-backend
+  name: notifications-connector-scxhf
+spec:
+  path: /
+  port:
+    targetPort: 9005
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: notifications-connector-splunk
+    weight: null
+status: {}

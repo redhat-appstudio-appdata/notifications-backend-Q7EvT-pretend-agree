@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: notifications-connector-drawer
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: notifications-connector-drawer
+    app.kubernetes.io/part-of: notifications-backend
+  name: notifications-connector-drawer
+spec:
+  replicas: 1
+  revisionHistoryLimit: 0
+  selector:
+    matchLabels:
+      app: java-quarkus-app
+      app.kubernetes.io/instance: notifications-connector-drawer
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: java-quarkus-app
+        app.kubernetes.io/instance: notifications-connector-drawer
+    spec:
+      containers:
+      - image: java-quarkus-image:latest
+        name: my-java-quarkus
+        ports:
+        - containerPort: 8081
+          name: http
+          protocol: TCP
+        - containerPort: 9007
+        resources:
+          requests:
+            cpu: 10m
+            memory: 100Mi
+status: {}

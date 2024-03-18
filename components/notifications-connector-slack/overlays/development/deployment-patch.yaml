@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: notifications-connector-slack
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-connector-slack@sha256:c5d590974530a2a936ec0b088a0cfccf9d07bfb45270c5590184de585bd7c7ff
+        name: my-java-quarkus
+        resources: {}
+status: {}

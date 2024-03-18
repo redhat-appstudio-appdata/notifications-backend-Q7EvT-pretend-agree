@@ -1,0 +1,23 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: notifications-connector-slack
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: notifications-connector-slack
+    app.kubernetes.io/part-of: notifications-backend
+  name: notifications-connector-simjg
+spec:
+  path: /
+  port:
+    targetPort: 9004
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: notifications-connector-slack
+    weight: null
+status: {}

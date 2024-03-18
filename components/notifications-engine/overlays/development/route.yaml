@@ -1,0 +1,23 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: notifications-engine
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: notifications-engine
+    app.kubernetes.io/part-of: notifications-backend
+  name: notifications-enginef1wi
+spec:
+  path: /
+  port:
+    targetPort: 8087
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: notifications-engine
+    weight: null
+status: {}

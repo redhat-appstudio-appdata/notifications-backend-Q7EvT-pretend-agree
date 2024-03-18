@@ -1,0 +1,23 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: notifications-connector-drawer
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: notifications-connector-drawer
+    app.kubernetes.io/part-of: notifications-backend
+  name: notifications-connector-dzxiq
+spec:
+  path: /
+  port:
+    targetPort: 9007
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: notifications-connector-drawer
+    weight: null
+status: {}

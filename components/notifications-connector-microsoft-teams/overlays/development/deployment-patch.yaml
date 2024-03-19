@@ -12,7 +12,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-connector-microsoft-teams@sha256:04bf5e94e369321b3fc6dcf4a9a1ad4d02cd346353ea17605ed8ff38e6319e96
+      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-connector-microsoft-teams@sha256:c698ee4671af5831b71b868442160a4063d4a2b22a21c2d52a88ccb8c37ac5f0
         name: my-java-quarkus
         resources: {}
 status: {}

@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: notifications-connector-servicenow
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-connector-servicenow@sha256:923cd27336d31eba063eba1d5ad2a2193aa64530a079998fc83450bf7e590ae6
         name: my-java-quarkus
         ports:
         - containerPort: 8081

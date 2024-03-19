@@ -12,7 +12,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-connector-servicenow@sha256:51f524a9e2587f854bcd576f903efc5c90a8010213bb3aeae0a956de4d29782f
+      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-connector-servicenow@sha256:91ed4133e078c089bf17b2901cc09cf4678d945ef5b79caca5b750bb8f08a274
         name: my-java-quarkus
         resources: {}
 status: {}

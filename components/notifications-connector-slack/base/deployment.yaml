@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: notifications-connector-slack
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-connector-slack@sha256:0f46aa7db6d175083cb049774425e59c0a87d7cd72d7f185f8794272fa3126f9
+      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-connector-slack@sha256:14f9f6d937021c4097fc4af7106f78f10bb4a874f0467563ad21b1bdacaa0360
         name: my-java-quarkus
         ports:
         - containerPort: 8081

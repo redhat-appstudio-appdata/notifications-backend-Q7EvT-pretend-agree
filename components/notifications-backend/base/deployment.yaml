@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: notifications-backend
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-backend@sha256:ce44b1e594d54ac7b2a6fd4bc96b9330e0347ecbd0a60993ead8142f2301a3cf
+      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-backend@sha256:1a11581f8f72c05b46113b17bec172572f815404706ba995ecc3a6283a8f6760
         name: my-java-quarkus
         ports:
         - containerPort: 8081

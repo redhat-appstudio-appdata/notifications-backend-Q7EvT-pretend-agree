@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: notifications-connector-drawer
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-connector-drawer@sha256:3ad48b10bdd009a2c9361577bf7260f963a251b28908de75592b747672d0d0b9
+      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-connector-drawer@sha256:47ec9ed53df3c19134cf4382e3c1622611581019f8ba9b09c5b56920c36e7bfa
         name: my-java-quarkus
         ports:
         - containerPort: 8081

@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: notifications-connector-email
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-connector-email@sha256:ea7abecb05ecaebd197ea79dc1a1cebcea6faa5d55d56347ff47486b5c2f6e07
+      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-connector-email@sha256:b901144dcff8ccb4b64e1eb2e89aa1e77b360e5fdcc62f7ad6de3d125b13074a
         name: my-java-quarkus
         ports:
         - containerPort: 8081

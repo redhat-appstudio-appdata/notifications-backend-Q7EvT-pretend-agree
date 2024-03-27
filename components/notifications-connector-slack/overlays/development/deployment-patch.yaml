@@ -12,7 +12,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-connector-slack@sha256:e42a5c08e9f01bd4a7d2f31d71b7824f84ef878f50e4fd264dcd9583547df882
+      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-connector-slack@sha256:8154fe2797fc8165ad72de5ff56293ea02bf92c22a19dfadd4725e0edbd99d5b
         name: my-java-quarkus
         resources: {}
 status: {}

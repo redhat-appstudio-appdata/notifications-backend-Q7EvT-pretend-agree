@@ -12,7 +12,7 @@ spec:
       creationTimestamp: null
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-connector-google-chat@sha256:7a128911902c8208d5885011a3de06d5d2965c9eec1777a39ee0e5daa6e3701d
+      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-connector-google-chat@sha256:104a190af2fa9494e37457efb1989f5a9d1f0966c8af95d7843e7b0092571a09
         name: my-java-quarkus
         resources: {}
 status: {}

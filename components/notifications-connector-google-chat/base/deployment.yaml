@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: notifications-connector-google-chat
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-connector-google-chat@sha256:fb1257dec673219dcb0b9c1ead0f702c52aede4ed7f97bad560cd19135cb928f
+      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-connector-google-chat@sha256:783d5e8bdfa78bff01f613e5387c36925b0bab0ca93b545384e726a08d95b21f
         name: my-java-quarkus
         ports:
         - containerPort: 8081

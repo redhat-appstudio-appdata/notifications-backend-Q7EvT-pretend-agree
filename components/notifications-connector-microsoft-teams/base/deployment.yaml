@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: notifications-connector-microsoft-teams
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-connector-microsoft-teams@sha256:f1d30ec49fdeced045ea23af9c399b25d0ba8aed04d4c2ac290d2d98d16d7808
+      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-connector-microsoft-teams@sha256:656095daeeaa77a28059728f224b20bf662da05635c8ac050b2eaac188ca0221
         name: my-java-quarkus
         ports:
         - containerPort: 8081

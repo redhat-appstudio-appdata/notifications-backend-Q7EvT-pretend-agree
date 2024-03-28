@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: notifications-connector-webhook
     spec:
       containers:
-      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-connector-webhook@sha256:9c7f5ec7e211aece3b155a61225dd932ad0333a393e78fc8da7241bf8e174578
+      - image: quay.io/redhat-user-workloads/hcc-notifications-tenant/notifications-backend/notifications-connector-webhook@sha256:07f8b90ae14b5d5996553b443f538446be8e7df8e1ba534d637dc60184234069
         name: my-java-quarkus
         ports:
         - containerPort: 8081
